@@ -1,0 +1,6 @@
+product_id,avg_daily_sales,days_in_stock,current_stock,discount_rate,dead_stock_label
+1,23,11,50,0.1,0
+2,5,42,99,0.2,0
+3,1,67,203,0.5,1
+4,31,5,30,0.05,0
+5,2,113,267,0.6,1
