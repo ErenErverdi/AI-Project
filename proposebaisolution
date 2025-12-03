@@ -1,0 +1,79 @@
+HOW DOES IT WORK? :
+The proposed AI system is designed to detect the "dead stock" problem encountered in e-commerce businesses at an early stage, highlight risky products, and develop appropriate strategies. The system generates a Dead Stock Risk Score for each product and determines which products are at risk of not being sold in the future.
+
+1)Data Collection and Feature Engineering:
+Sales records, inventory levels, pricing and discount history, product attributes, and user behavior data are collected from multiple sources. These datasets transformed into meaningful features that can be used as model inputs. Such as:
+Sales velocity
+Stock age
+Click-through rate (CTR)
+Add-to-cart but not purchased rate
+Seasonality or period information
+Discount history
+
+2)Predictive Modeling and Risk Score Generation:
+Machine learning models analyze patterns in historical data to predict the likelihood of a product becoming discontinued. For each SKU, the model generates a Dead Stock Risk Score between 0 and 1. The higher the score, the higher the risk of the product becoming dead stock.
+
+3)Decision Support and Automatic Actions:
+The scores produced by the model are evaluated by a decision engine that supports strategic decisions:
+
+Highlights risky products
+Suggests dynamic pricing/discounts
+Generates special coupons for customers
+Alerts category managers
+Triggers a "small-lot stocking" strategy for new products
+This increases operational efficiency and significantly reduces dead stock.
+
+AI/ML Techniques Used:
+
+1)Supervised Learning Models:
+These models predict the likelihood of products going unsold in the future by looking at past sales and inventory data.
+-Random Forest
+-XGBoost
+-Logistic Regression (baseline model)
+These models provide both high accuracy and ease of understanding for business units because they can explain feature importance.
+
+2)Time Series Forecasting Models:
+-LSTM (Long Short-Term Memory) or Prophet
+-Effective for predicting future sales trends
+-Useful for detecting seasonal patterns and sudden demand changes
+
+3)Reinforcement Learning (Optional Advanced Phase):
+-Can optimize discount strategies based on customer response
+-Learns which incentive level maximizes sales with minimum margin loss
+
+4)Recommendation Algorithms:
+-Personalized advertising and coupon targeting
+-Collaborative filtering or deep learning–based recommendation models
+-Helps display high-risk items to the right customers
+
+Data Requirements:
+The system requires a combination of sales, behavioral, and product metadata to ensure accurate predictions.
+1)Sales & Inventory Data
+Historical sales quantity (daily/weekly)
+Stock levels and stock age
+Sell-through rate
+Price changes and discounts
+Return rates
+
+2)Product Information
+Category, brand, seasonality
+Product type
+Release date
+Cost and profit margin
+
+3)Customer Interaction Data
+Page views, click-through rate
+Add-to-cart but not purchased events
+Bounce rate
+Conversion rate
+Customer segmentation
+
+4)Operational & Supply Chain Data
+Supplier lead times
+Delivery delays
+Warehouse handling time
+Packaging or restocking costs
+
+These data points enable the model to detect which products are slowing down, losing relevance, or failing to convert browsing customers into buyers.
+
+System Architecture Diagram:
