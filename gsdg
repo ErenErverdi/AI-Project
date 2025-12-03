@@ -1,0 +1,1 @@
+data = { 'product_id': [1, 2, 3, 4, 5], 'avg_daily_sales': [23, 5, 1, 31, 2], 'days_in_stock': [11, 42, 67, 5, 113], 'current_stock': [50, 99, 203, 30, 267], 'discount_rate': [0.10, 0.20, 0.50, 0.05, 0.60], 'dead_stock_label': [0, 0, 1, 0, 1] } Can you make this into a downloadable
